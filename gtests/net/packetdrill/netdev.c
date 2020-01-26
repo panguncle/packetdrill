@@ -303,7 +303,7 @@ struct netdev *local_netdev_new(struct config *config)
 
 	check_remote_address(config, netdev);
 	create_device(config, netdev);
-	set_device_offload_flags(netdev);
+	// set_device_offload_flags(netdev);
 	bring_up_device(netdev);
 
 	if (config->is_anyip)
